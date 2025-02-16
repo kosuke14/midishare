@@ -1,0 +1,36 @@
+{
+    "en": {
+        "title": "Parse MIDI and upload!",
+        "deletion": "If nobody accesses your uploaded MIDI file for 30 days, it will be deleted.",
+        "privacy": "This service uses 'jsonblob.com' to upload your parsed midi. We are not responsible if your midi is misused by this service.",
+        "selectFile": "Select File",
+        "upload": "Upload",
+        "uploading": "Uploading...",
+        "selectedFile": "Selected file:",
+        "success": "Upload successful! URL:",
+        "error": "Error occurred: ",
+        "fileTypeError": "Please select a correct MIDI file",
+        "formatError": "Invalid or corrupted MIDI format",
+        "retry": "Retry",
+        "language": "Language",
+        "copy": "Copy",
+        "copied": "Copied!"
+    },
+    "ja": {
+        "title": "MIDIを変換して共有！",
+        "deletion": "アップロードされたMIDIは30日間アクセスされなかった場合、自動で削除されます。",
+        "privacy": "このサービスでは、「jsonblob.com」を用いてあなたのMIDIをアップロードしています。このサービスによってあなたがアップロードしたMIDIが不正に利用されても私は責任を負いません。",
+        "selectFile": "ファイルを選択",
+        "upload": "アップロード",
+        "uploading": "アップロード中...",
+        "selectedFile": "選択されたファイル:",
+        "success": "アップロード成功！ URL:",
+        "error": "エラーが発生しました: ",
+        "fileTypeError": "正しいMIDIファイルを選択してください",
+        "formatError": "無効であるか、破損しているMIDIファイルです。",
+        "retry": "再試行",
+        "language": "言語",
+        "copy": "コピー",
+        "copied": "コピーしました！"
+    }
+}
