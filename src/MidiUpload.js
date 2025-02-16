@@ -21,12 +21,14 @@ const MidiUpload = () => {
     const [isUploading, setIsUploading] = useState(false);
     const [uploadResult, setUploadResult] = useState(null);
     const [error, setError] = useState(null);
+    const [copy, setCopy] = useState(null);
     const [language, setLanguage] = useState(() => {
         const savedLang = localStorage.getItem('appLanguage');
         return savedLang || (window.navigator.language === 'ja' ? 'ja' : 'en');
     });
     useEffect(() => {
         localStorage.setItem('appLanguage', language);
+        setCopy(translations[language].copy);
     }, [language]);
 
     const t = translations[language];
@@ -178,12 +180,13 @@ const MidiUpload = () => {
                             <Button
                                 size="small"
                                 onClick={() => {
+                                    setCopy(t.copied);
                                     navigator.clipboard.writeText(uploadResult);
-                                    setTimeout(() => alert(t.copied), 300);
+                                    setTimeout(() => setCopy(t.copy), 1000);
                                 }}
                                 startIcon={<ContentCopyIcon fontSize="small" />}
                             >
-                                {t.copy}
+                                {copy}
                             </Button>
                         </Box>
                     </Alert>
