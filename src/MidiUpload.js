@@ -192,6 +192,10 @@ const MidiUpload = () => {
                 <Typography>
                     {t.deletion}
                 </Typography>
+
+                <Typography>
+                    {t.nouploadway} <a href="https://sukru.top/Midi">https://sukru.top/Midi</a>
+                </Typography>
             </Box>
         </Container>
     );
