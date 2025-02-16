@@ -177,7 +177,10 @@ const MidiUpload = () => {
                             </Link>
                             <Button
                                 size="small"
-                                onClick={() => navigator.clipboard.writeText(uploadResult) && alert(t.copied)}
+                                onClick={() => {
+                                    navigator.clipboard.writeText(uploadResult);
+                                    setTimeout(() => alert(t.copied), 300);
+                                }}
                                 startIcon={<ContentCopyIcon fontSize="small" />}
                             >
                                 {t.copy}
