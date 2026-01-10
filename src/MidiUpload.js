@@ -78,7 +78,7 @@ const MidiUpload = () => {
         setUploadResult(null);
 
         try {
-            const docdata = await axios.post('https://npoint.io/documents', {}, {
+            const docdata = await axios.post('https://www.npoint.io/documents', {}, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
