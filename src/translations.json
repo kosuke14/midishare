@@ -1,7 +1,7 @@
 {
     "en": {
         "title": "Parse MIDI and upload!",
-        "deletion": "If nobody accesses your uploaded MIDI file for 30 days, it will be deleted.",
+        "deletion": "Warning: There is a limit to upload your midi within a minute!",
         "privacy": "This service uses 'npoint.io' to upload your parsed midi. We are not responsible if your midi is misused by this service.",
         "nouploadway": "If you would like to upload by yourself, use:",
         "selectFile": "Select File",
@@ -19,7 +19,7 @@
     },
     "ja": {
         "title": "MIDIを変換して共有！",
-        "deletion": "アップロードされたMIDIは30日間アクセスされなかった場合、自動で削除されます。",
+        "deletion": "注意: 1分間にアップロード・ダウンロードできる回数に制限があります！",
         "privacy": "このサービスでは、「npoint.io」を用いてあなたのMIDIをアップロードしています。このサービスによってあなたがアップロードしたMIDIが不正に利用されても私は責任を負いません。",
         "nouploadway": "ファイルのアップロードも自分でしたい場合は:",
         "selectFile": "ファイルを選択",
