@@ -78,14 +78,25 @@ const MidiUpload = () => {
         setUploadResult(null);
 
         try {
-            const response = await axios.post('https://jsonblob.com/api/jsonBlob', selectedFile.data, {
+            const docdata = await axios.post('https://npoint.io/documents', {}, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 }
             });
+            
+            if (!docdata.data || !docdata.data.token || !docdata.data.api_url)
+                throw new Error(language === 'ja' ? "JSON保管サービスでエラーが発生しました。" : "An error has occured on a JSON storing service.");
+            
+            const response = await axios.post(docdata.data.api_url, selectedFile.data, {
+                headers: {
+                    'Authorization': `Bearer ${docdata.data.token}`,
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            });
 
-            const locationUrl = response.headers.location;
+            const locationUrl = docdata.data.api_url;
             setUploadResult(locationUrl);
             setSelectedFile(null);
         } catch (err) {
